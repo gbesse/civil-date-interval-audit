@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "civil-date-interval-audit"
+version = "0.1.0a1"
+description = "FR: Comparer durées civiles et durées UTC entre échéances | EN: Compare civil and UTC durations between deadlines | ES: Comparar duraciones civiles y UTC entre vencimientos"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+civil-date-interval-audit = "civil_date_interval_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["civil_date_interval_audit*"]
